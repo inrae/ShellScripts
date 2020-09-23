@@ -46,7 +46,11 @@ It use one main source file and the dependency modules and functions as source f
 * The Librairies Linking Mode allow modular compilation using Unix Librairies
 
 The script take 2 types of arguments : the first one determine the mode between 
-0 (chain),  1 (modular), 2 (mpi compilation), 3 (openmp compilation) and 4 (Librairies linking mode)
+* 1 (chain)
+* 2 (modular)
+* 3 (mpi compilation)
+* 4 (openmp compilation)
+* 5 (Librairies linking mode)
 The others parameters are the source files to compile.
 The source file must be .c, .cpp or fortran files. 
 Others extensions files WILL NOT BE TREATED.
@@ -73,10 +77,10 @@ You have to use the correct syntaxe specifying the mode for each execution :
 Where :
 
 * mode is the way to transfert between :
-	* 0 mean upload file to the ssh root directory
-	* 1 mean download file since the ssh root directory
-	* 2 mean upload folder to the ssh specified destination folder
-	* 3 mean download folder since the ssh specified source folder
+	* 1 mean upload file to the ssh root directory
+	* 2 mean download file since the ssh root directory
+	* 3 mean upload folder to the ssh specified destination folder
+	* 4 mean download folder since the ssh specified source folder
 * user is your standard user name on the ssh plateform
 * source folder is the name of the source repertory
 * destination folder is the name of the destination repertory
