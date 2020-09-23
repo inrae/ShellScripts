@@ -9,6 +9,26 @@ Shell Scripts Collection
 
 This repertory contains Utilitary Shell scripts
 
+ClusterRessourceGetter.py
+-------------------------
+
+Script Usage
+
+This script have been thinked for a Lenovo Cluster (384 Cores, 2.3 TB RAM) running with the CentOS system from Linux.
+The script give essentials hardware informations as :
+
+	* Free Memory Avaible
+	* Number of allocated CPU 
+	* The ratio of Cpu use
+	* Number of free CPU 
+
+To use it, please to launch the command :
+
+**./Script_scheduler.sh <time_step>**
+
+Where time_step is the length of the period in s. The script take information directly on the Lenovo system and restitute them with a timestamp periodically.
+It have been thinked to populate database for graphs.
+
 compile.sh
 ----------
 
