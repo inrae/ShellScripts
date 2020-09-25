@@ -78,6 +78,10 @@ treat (-d /my_project_to_compile_directory/ as example)
 	
  Help is avaible using the --help or -h option
  
+ Option priority order :
+  
+ -o < -d < -l < -L
+ 
  # cpu_count.sh
  --------------
  
