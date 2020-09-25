@@ -276,12 +276,18 @@ if [ $mode -eq 1 ]                                                              
 									else
 										cp $i ./tmp/$e	
 									fi
-									if [ $exe_flag -eq 0 ]
+									if [ $exe_flag -eq 0 ] && [ $rep_flag -eq 0 ]
 									then
 										gfortran ./tmp/$e -o ./$name || error
-									elif [ $exe_flag -eq 1 ]
+									elif [ $exe_flag -eq 1 ] && [ $rep_flag -eq 0 ]
 									then
 										gfortran ./tmp/$e -o ./$exe_name || error
+									elif [ $exe_flag -eq 0 ] && [ $rep_flag -eq 1 ]
+									then
+										gfortran ./tmp/$e -o $relative_way$name || error
+									elif [ $exe_flag -eq 1 ] && [ $rep_flag -eq 1 ]
+									then
+										gfortran ./tmp/$e -o $relative_way$exe_name || error
 									fi							
 									rm -r tmp
 							else
@@ -293,10 +299,10 @@ if [ $mode -eq 1 ]                                                              
 										gfortran -o $exe_name $i || error
 									elif [ $exe_flag -eq 0 ] && [ $rep_flag -eq 1 ]
 									then	
-										gfortran -o $name $relative_way$i || error
+										gfortran -o $relative_way$name $relative_way$i || error
 									elif [ $exe_flag -eq 1 ] && [ $rep_flag -eq 1 ]
 									then
-										gfortran -o $exe_name $relative_way$i || error
+										gfortran -o $relative_way$exe_name $relative_way$i || error
 									fi
 							fi
 					fi
