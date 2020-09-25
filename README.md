@@ -18,7 +18,7 @@ This repertory contains Utilitary Shell scripts
 Script usage
 
 This script has been developped to automate the compilation process.
-It treat c, c++ and fortran source files. Compilation can be ruled with four modes :
+It treat c, c++ and fortran source files. Compilation can be ruled with five modes :
 
 * 1 ) The chain mode realize a chain compilation mode : Each source file is 
 compiled independantly from each other
