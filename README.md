@@ -85,13 +85,13 @@ If specified you should give the executable the name you want as following argum
 If the source file(s) are not in the current directory, the -d option should specified the directory to 
 treat (-d /my_project_to_compile_directory/ as example)
 
-./compile.sh <mode> <src_file> -d <src_file_repertory_relative_way>
+./compile.sh <mode> <src_file> -d<src_file_repertory_relative_way>
 	
  Help is avaible using the --help or -h option
  
  Option priority order :
   
- -o < -d < -l < -L
+ -o < -d < -l < -L < -O
  
  # cpu_count.sh
  --------------
