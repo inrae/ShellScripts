@@ -47,6 +47,17 @@ In case of modular compilation, please to keep this parameter structure :
 Options
 -------
 
+-O : 
+
+In case of additionnal features like Librairies using an option like math.h or compilater directive
+options as -lpthread, etc
+It will act as enlarged compilater options directive.
+Option(s) as following arguments (MUST be specified as the last parameters) :
+
+example
+
+./compile.sh <mode> <source file 1> <source file 2> ... <source file n> <-O> <-lm> ...
+	
 -l :
 
 In case of additionnal features like Object, Static or Dynamix Librairies use the -l option with
