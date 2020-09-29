@@ -481,16 +481,16 @@ elif [ $mode -eq 2 ]                                                            
 				done
 				if [ $exe_flag -eq 0 ] &&  [ $rep_flag -eq 0 ]                        
 				then
-					echo "gfortran -o $name $files $lib_option" || error
+					gfortran -o $name $files $lib_option || error
 				elif [ $exe_flag -eq 0 ] &&  [ $rep_flag -eq 1 ]                        
 				then
-					echo "gfortran -o $relative_way$name $files $lib_option" || error
+					gfortran -o $relative_way$name $files $lib_option || error
 				elif [ $exe_flag -eq 1 ] && [ $rep_flag -eq 0 ]
 				then
-					echo "gfortran -o $exe_name $files $lib_option" || error
+					gfortran -o $exe_name $files $lib_option || error
 				elif [ $exe_flag -eq 1 ] && [ $rep_flag -eq 1 ]
 				then
-					echo "gfortran -o $relative_way$exe_name $files $lib_option" || error
+					gfortran -o $relative_way$exe_name $files $lib_option || error
 				fi				
 				if [ $rename_flag -eq  1 ]
 				then
